@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+    </head>
+    <body>
+        <h2>LOGIN FORM</h2>
+        <button class="btn btn-primary first" onclick="document.getElementById('cover').style.display='block'" style="width:auto;">Login</button>
+        <div id="cover" class="fordi">  
+            <form class="anim" method="POST">
+                <div class = "innerform">
+                <label for="usern"><b>Username</b></label>
+                <input type="email" placeholder="Enter Username" name="usern" required>
+                <lable for="passw"><b>Password</b></lable>
+                <input type="password" placeholder="Enter Password"name="passw" required>
+                <button type="submit" class="btn btn-primary">LOGIN</button>
+                <div>
+                    <div class="container">
+                     <button type="button" class="btn btn-danger" onclick="document.getElementById('cover').style.display='none'">Cancel</button>
+                     <span class="password">Forgot <a href="#">password?</a></span>
+                        <div>
+          </form>
+        <div>
+            <script>
+                var form = document.getElementById('cover')
+                window.onclick=function(event){
+                    if(event.target==form)
+                    form.style.display = "none";
+                }
+            </script>
+    </body>
+    </head>
+</html>
